@@ -50,6 +50,13 @@ flutter:
   assets:
     - assets/splash.png
     - assets/bg.png
+    - assets/profile.jpg
+    - assets/femail.png
+    - assets/Mu1.jpg
+    - assets/Mu2.jpg
+    - assets/Mu3.jpg
+    - assets/Mu4.jpg
+    - assets/player.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

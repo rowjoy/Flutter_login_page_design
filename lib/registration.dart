@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Registration extends StatefulWidget {
+  static const String path = "Registration";
   const Registration({Key key}) : super(key: key);
 
   @override

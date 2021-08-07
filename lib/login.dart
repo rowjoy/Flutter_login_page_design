@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:login_apps/homeScreen.dart';
+import 'package:login_apps/pagerouteAnimation.dart';
 import 'package:login_apps/registration.dart';
 
 class LoginPage extends StatefulWidget {
+  static const String path = "LoginPage";
   const LoginPage({Key key}) : super(key: key);
 
   @override
@@ -150,7 +153,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ]),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(pageanimation(Homescreen()));
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blueGrey,
                       minimumSize: Size(327, 50),
@@ -241,10 +246,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       InkWell(
                         onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Registration()));
+                          Navigator.of(context)
+                              .push(pageanimation(Registration()));
                         },
                         child: Text(
                           'Sign Up ',
